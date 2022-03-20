@@ -3,8 +3,11 @@
 # # ['4', '3', '2', '1', '10', '14', '-14']
 
 
-str = "this is string example....wow!!!";
+strn = "this is string example....wow!!!";
 
-sub = "i";
 
-print(str.count(sub))
+def best_practices(s):
+    return len([i for i in set(s.lower()) if s.lower().count(i) > 1])
+
+
+print(best_practices(strn))
